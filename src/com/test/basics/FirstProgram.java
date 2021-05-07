@@ -1,10 +1,12 @@
 package com.test.basics;
 
+import org.testng.annotations.Test;
+
 public class FirstProgram {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	@Test
+	public void demoTest() {
+		System.out.println("Executed Successfully");
 	}
 
 }

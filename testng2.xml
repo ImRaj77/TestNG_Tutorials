@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+
+	<parameter name="URL" value="www.google.com" />
+
+	<test name="Personal Loan">
+		<packages>
+			<package name="com.test.basics" /> <!-- We can execute whole package as well --> 
+		</packages>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

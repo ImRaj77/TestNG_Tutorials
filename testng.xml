@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department" parallel="tests" thread-count="2">
+
+	<parameter name="URL" value="www.google.com" />
+
+	<test name="Personal Loan" parallel="classes" thread-count="2">
+	
+	<parameter name="URL" value="www.personal.com" />
+		<classes>
+			<class name="com.test.basics.FirstProgram" />
+			<class name="com.test.basics.SecondProgram" />
+			<class name="com.test.basics.ThirdProgram" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Home Loan">
+		<classes>
+			<class name="com.test.basics.HomeLoan">
+				<methods>
+					<!-- <include name="homeSignUp" /> <exclude name="homeLogin" /> -->
+					<!--<exclude name="home.*" />  It will exclude all test methods starts with home -->
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

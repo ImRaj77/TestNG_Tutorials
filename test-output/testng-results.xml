@@ -1,17 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="11" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37" started-at="2021-05-07T10:01:50 IST" finished-at="2021-05-07T10:01:50 IST">
+  <suite name="Loan Department" duration-ms="35" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
     <groups>
+      <group name="Smoke">
+        <method signature="ThirdProgram.webLogin()[pri:0, instance:com.test.basics.ThirdProgram@4973813a]" name="webLogin" class="com.test.basics.ThirdProgram"/>
+        <method signature="FirstProgram.demoTestAnother()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="demoTestAnother" class="com.test.basics.FirstProgram"/>
+        <method signature="SecondProgram.demoTest()[pri:0, instance:com.test.basics.SecondProgram@3a883ce7]" name="demoTest" class="com.test.basics.SecondProgram"/>
+        <method signature="HomeLoan.homeLogin()[pri:0, instance:com.test.basics.HomeLoan@1f7030a6]" name="homeLogin" class="com.test.basics.HomeLoan"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="Default test" duration-ms="37" started-at="2021-05-07T10:01:50 IST" finished-at="2021-05-07T10:01:50 IST">
+    <test name="Home Loan" duration-ms="30" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
       <class name="com.test.basics.FirstProgram">
-        <test-method status="PASS" signature="demoTest()[pri:0, instance:com.test.basics.FirstProgram@7fac631b]" name="demoTest" duration-ms="7" started-at="2021-05-07T10:01:50 IST" finished-at="2021-05-07T10:01:50 IST">
+        <test-method status="PASS" signature="setupFirst()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="setupFirst" is-config="true" duration-ms="6" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupFirst -->
+        <test-method status="PASS" signature="setupLast()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="setupLast" is-config="true" duration-ms="0" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupLast -->
+      </class> <!-- com.test.basics.FirstProgram -->
+      <class name="com.test.basics.HomeLoan">
+        <test-method status="PASS" signature="homeLogin()[pri:0, instance:com.test.basics.HomeLoan@1f7030a6]" name="homeLogin" duration-ms="4" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLogin -->
+        <test-method status="PASS" signature="homeLogout()[pri:0, instance:com.test.basics.HomeLoan@1f7030a6]" name="homeLogout" duration-ms="2" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLogout -->
+        <test-method status="PASS" signature="homeSignUp(java.lang.String)[pri:0, instance:com.test.basics.HomeLoan@1f7030a6]" name="homeSignUp" duration-ms="0" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeSignUp -->
+      </class> <!-- com.test.basics.HomeLoan -->
+    </test> <!-- Home Loan -->
+    <test name="Personal Loan" duration-ms="35" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+      <class name="com.test.basics.FirstProgram">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="setup" is-config="true" duration-ms="0" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeTheClass()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="beforeTheClass" is-config="true" duration-ms="1" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTheClass -->
+        <test-method status="PASS" signature="beforeEveryTest()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="beforeEveryTest" is-config="true" duration-ms="0" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method status="PASS" signature="demoTest()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="demoTest" duration-ms="4" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demoTest -->
+        <test-method status="PASS" signature="demoTestAnother()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="demoTestAnother" duration-ms="1" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoTestAnother -->
+        <test-method status="PASS" signature="beforeEveryTest()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="beforeEveryTest" is-config="true" duration-ms="0" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryTest -->
+        <test-method status="PASS" signature="afterEveryTest()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="afterEveryTest" is-config="true" duration-ms="0" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTest -->
+        <test-method status="PASS" signature="afterEveryTest()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="afterEveryTest" is-config="true" duration-ms="0" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTest -->
+        <test-method status="PASS" signature="afterTheClass()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="afterTheClass" is-config="true" duration-ms="0" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTheClass -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.basics.FirstProgram@cd2dae5]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.test.basics.FirstProgram -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.test.basics.ThirdProgram">
+        <test-method status="PASS" signature="parameterizationTest(java.lang.String)[pri:0, instance:com.test.basics.ThirdProgram@4973813a]" name="parameterizationTest" duration-ms="1" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.personal.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterizationTest -->
+        <test-method status="PASS" signature="webLogin()[pri:0, instance:com.test.basics.ThirdProgram@4973813a]" name="webLogin" duration-ms="1" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webLogin -->
+        <test-method status="PASS" signature="apiLogin()[pri:0, instance:com.test.basics.ThirdProgram@4973813a]" name="apiLogin" duration-ms="1" started-at="2021-05-08T20:07:12 IST" depends-on-methods="com.test.basics.ThirdProgram.webLogin" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiLogin -->
+      </class> <!-- com.test.basics.ThirdProgram -->
+      <class name="com.test.basics.SecondProgram">
+        <test-method status="PASS" signature="demoTest()[pri:0, instance:com.test.basics.SecondProgram@3a883ce7]" name="demoTest" duration-ms="5" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoTest -->
+        <test-method status="PASS" signature="demoTestAnother()[pri:0, instance:com.test.basics.SecondProgram@3a883ce7]" name="demoTestAnother" duration-ms="1" started-at="2021-05-08T20:07:12 IST" finished-at="2021-05-08T20:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoTestAnother -->
+      </class> <!-- com.test.basics.SecondProgram -->
+    </test> <!-- Personal Loan -->
+  </suite> <!-- Loan Department -->
 </testng-results>
